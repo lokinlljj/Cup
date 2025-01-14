@@ -1,62 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>重庆联空动力科技有限公司</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="scripts/main.js" defer></script>
+    <title>企业官网</title>
+    <!-- AOS动画库 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>重庆联空动力科技有限公司</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="products.html">产品展示</a></li>
-                <li><a href="training.html">教育培训</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html">联系我们</a></li>
-                <li><a href="careers.html">人才招聘</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>欢迎来到重庆联空动力科技有限公司</h2>
-            <p>探索我们的无人机产品和服务</p>
-        </section>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/drone1.jpg" alt="Drone Image 1"></div>
-                <div class="swiper-slide"><img src="images/drone2.jpg" alt="Drone Image 2"></div>
-                <div class="swiper-slide"><img src="images/drone3.jpg" alt="Drone Image 3"></div>
-                <!-- Add more slides as needed -->
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="重庆联空动力科技有限公司">
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#products">产品</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-    </main>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">创新科技 引领未来</h1>
+            <p data-aos="fade-up" data-aos-delay="200">专注于提供最前沿的技术解决方案</p>
+            <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">联系我们</a>
+        </div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 data-aos="fade-up">我们的产品</h2>
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image"></div>
+                    <h3>产品一</h3>
+                    <p>产品描述内容</p>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image"></div>
+                    <h3>产品二</h3>
+                    <p>产品描述内容</p>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image"></div>
+                    <h3>产品三</h3>
+                    <p>产品描述内容</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="fade-up">关于我们</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>公司简介内容...</p>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <!-- 公司图片 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">联系我们</h2>
+            <div class="contact-content">
+                <form class="contact-form" data-aos="fade-up">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="电子邮箱" required>
+                    <textarea placeholder="请输入您的留言" required></textarea>
+                    <button type="submit" class="submit-button">发送信息</button>
+                </form>
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <h3>联系方式</h3>
+                    <p>电话：182-2541-6922</p>
+                    <p>邮箱：3059106687@qq.com</p>
+                    <p>地址：重庆市渝北区土星A2-24层</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
     <footer>
-        <p>&copy; 2025 重庆联空动力科技有限公司. 保留所有权利。</p>
+        <div class="container">
+            <p>&copy; 2025 重庆联空动力科技有限公司. 版权所有</p>
+        </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
+</html> 
