@@ -1,0 +1,218 @@
+/* 产品详情页样式 */
+.product-hero {
+    margin-top: 60px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--background-color) 0%, #ffffff 100%);
+    padding: 5% 10%;
+}
+
+.product-hero-content {
+    flex: 1;
+    padding-right: 5%;
+}
+
+.product-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.key-features {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.feature .unit {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.feature .desc {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--text-color);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 核心优势部分 */
+.core-features {
+    padding: 5rem 10%;
+    background-color: white;
+}
+
+.core-features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-color);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* 应用场景部分 */
+.applications {
+    padding: 5rem 10%;
+    background-color: var(--background-color);
+}
+
+.scene-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+}
+
+.scene-card {
+    flex: 0 0 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.scene-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.scene-content {
+    padding: 1.5rem;
+}
+
+/* 技术参数部分 */
+.specifications {
+    padding: 5rem 10%;
+    background: white;
+}
+
+.specs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.specs-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specs-group li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* 购买咨询部分 */
+.purchase-info {
+    padding: 5rem 10%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .product-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .key-features {
+        justify-content: center;
+    }
+
+    .product-hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .scene-slider {
+        flex-direction: column;
+    }
+
+    .scene-card {
+        flex: none;
+        width: 100%;
+    }
+} 
